@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FlawPickerClass</class>
+ <widget class="QMainWindow" name="FlawPickerClass">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>36</pointsize>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>FlawPicker</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Resources/icons/logo.png</normaloff>Resources/icons/logo.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-color: qlineargradient(spread:pad, x1:0.489, y1:0.057, x2:0.500364, y2:0.938, stop:0 rgba(193, 223, 255, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: rgb(223, 223, 223);</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>36</width>
+    <height>36</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetNoConstraint</enum>
+      </property>
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>920</width>
+          <height>600</height>
+         </size>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="widgetResizable">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-82</y>
+           <width>922</width>
+           <height>663</height>
+          </rect>
+         </property>
+         <widget class="QGroupBox" name="groupBoxrois">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>530</y>
+            <width>901</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QCheckBox" name="checkboxsaveroi">
+           <property name="geometry">
+            <rect>
+             <x>840</x>
+             <y>20</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>保存</string>
+           </property>
+          </widget>
+          <widget class="QLCDNumber" name="FlawNumber">
+           <property name="geometry">
+            <rect>
+             <x>113</x>
+             <y>10</y>
+             <width>61</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-color: qlineargradient(spread:pad, x1:1, y1:0.511, x2:0, y2:0.517, stop:0 rgba(25, 0, 35, 255), stop:1 rgba(255, 255, 255, 255));</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="smallDecimalPoint">
+            <bool>false</bool>
+           </property>
+           <property name="digitCount">
+            <number>5</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Filled</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_10">
+           <property name="geometry">
+            <rect>
+             <x>740</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line_1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>881</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_5">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_8">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_3">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_7">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkboxshowroi">
+           <property name="geometry">
+            <rect>
+             <x>780</x>
+             <y>20</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>显示</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roiarea_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>缺陷搜索结果</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_9">
+           <property name="geometry">
+            <rect>
+             <x>660</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_4">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_2">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_11">
+           <property name="geometry">
+            <rect>
+             <x>820</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabel_6">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>50</y>
+             <width>60</width>
+             <height>60</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Panel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_2">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_3">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_4">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_6">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_5">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_7">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_9">
+           <property name="geometry">
+            <rect>
+             <x>660</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_8">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_10">
+           <property name="geometry">
+            <rect>
+             <x>740</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="roilabelt_11">
+           <property name="geometry">
+            <rect>
+             <x>820</x>
+             <y>110</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <zorder>FlawNumber</zorder>
+          <zorder>roilabel_10</zorder>
+          <zorder>line_1</zorder>
+          <zorder>roilabel_5</zorder>
+          <zorder>roilabel_8</zorder>
+          <zorder>roilabel_3</zorder>
+          <zorder>roilabel_7</zorder>
+          <zorder>checkboxshowroi</zorder>
+          <zorder>roilabel_1</zorder>
+          <zorder>roiarea_2</zorder>
+          <zorder>roilabel_9</zorder>
+          <zorder>roilabel_4</zorder>
+          <zorder>roilabel_2</zorder>
+          <zorder>roilabel_11</zorder>
+          <zorder>roilabel_6</zorder>
+          <zorder>roilabelt_1</zorder>
+          <zorder>roilabelt_2</zorder>
+          <zorder>roilabelt_3</zorder>
+          <zorder>roilabelt_4</zorder>
+          <zorder>roilabelt_6</zorder>
+          <zorder>roilabelt_5</zorder>
+          <zorder>roilabelt_7</zorder>
+          <zorder>roilabelt_9</zorder>
+          <zorder>roilabelt_8</zorder>
+          <zorder>roilabelt_10</zorder>
+          <zorder>roilabelt_11</zorder>
+          <zorder>checkboxsaveroi</zorder>
+         </widget>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>470</y>
+            <width>561</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QToolButton" name="start">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="FlawPicker.qrc">
+             <normaloff>:/FlawPicker/Resources/icons/start.png</normaloff>:/FlawPicker/Resources/icons/start.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="pause">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>0</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="FlawPicker.qrc">
+             <normaloff>:/FlawPicker/Resources/icons/pause.png</normaloff>:/FlawPicker/Resources/icons/pause.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="stopcamera">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>0</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="FlawPicker.qrc">
+             <normaloff>:/FlawPicker/Resources/icons/stop.png</normaloff>:/FlawPicker/Resources/icons/stop.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="devicecomboBox">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>20</y>
+             <width>91</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="devicelabel">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>20</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>设备：</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="updatedevice">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="FlawPicker.qrc">
+             <normaloff>:/FlawPicker/Resources/icons/update.png</normaloff>:/FlawPicker/Resources/icons/update.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>16</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="cameraautopros">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>10</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>自动处理模式</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>0</y>
+             <width>20</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="Line" name="line_3">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>20</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="autosetting">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>30</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>设置处理频率</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_5">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>0</y>
+             <width>20</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="autograbsetting">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>30</y>
+             <width>111</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>设置采集频率及路径</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="cameraautograb">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>10</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>自动采集模式</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="picshow">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>30</y>
+            <width>770</width>
+            <height>433</height>
+           </rect>
+          </property>
+          <property name="cursor">
+           <cursorShape>CrossCursor</cursorShape>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>2</number>
+          </property>
+          <property name="midLineWidth">
+           <number>0</number>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="FlawPicker.qrc">:/FlawPicker/Resources/icons/bkgd.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="result">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>30</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="FlawPicker.qrc">:/FlawPicker/Resources/icons/nosig.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>998</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(0, 0, 0);</string>
+   </property>
+   <widget class="QMenu" name="files_menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsave_as"/>
+   </widget>
+   <widget class="QMenu" name="choose_menu">
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>路径设置</string>
+     </property>
+     <addaction name="actionPathSetting"/>
+     <addaction name="actionSavePath"/>
+     <addaction name="actionStandardPath"/>
+    </widget>
+    <addaction name="actionautosave"/>
+    <addaction name="actionsaverois"/>
+    <addaction name="actionshowroi"/>
+    <addaction name="actionlabelfilter"/>
+    <addaction name="actionautograb"/>
+    <addaction name="actioncameraauto"/>
+    <addaction name="menu"/>
+    <addaction name="actionreset"/>
+   </widget>
+   <widget class="QMenu" name="help_menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionpresent"/>
+    <addaction name="actionabout"/>
+   </widget>
+   <addaction name="files_menu"/>
+   <addaction name="choose_menu"/>
+   <addaction name="help_menu"/>
+  </widget>
+  <widget class="QToolBar" name="Toolbar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>56</width>
+     <height>56</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopenT"/>
+   <addaction name="separator"/>
+   <addaction name="actionsaveT"/>
+   <addaction name="separator"/>
+   <addaction name="actionsaveasT"/>
+   <addaction name="separator"/>
+   <addaction name="actioncameraT"/>
+   <addaction name="separator"/>
+   <addaction name="actiongrabT"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionimgprosT"/>
+   <addaction name="separator"/>
+   <addaction name="actionlabelingT"/>
+   <addaction name="separator"/>
+   <addaction name="actionanalyzeT"/>
+   <addaction name="separator"/>
+   <addaction name="actionreport"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionsettingT"/>
+   <addaction name="separator"/>
+   <addaction name="actiontoolsT"/>
+   <addaction name="separator"/>
+   <addaction name="actionaboutT"/>
+   <addaction name="separator"/>
+   <addaction name="actionspeech"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="ToolBarSide">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftToolBarArea|Qt::RightToolBarArea</set>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionenlarge"/>
+   <addaction name="actionshrink"/>
+   <addaction name="actionrenew"/>
+   <addaction name="actionclearImg"/>
+  </widget>
+  <widget class="QToolBar" name="settingToolbar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopenpath"/>
+   <addaction name="actionsavepath"/>
+   <addaction name="actionstandardpath"/>
+   <addaction name="actionresetT2"/>
+  </widget>
+  <widget class="QToolBar" name="toolBarstop">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionstopAll"/>
+  </widget>
+  <action name="actionsave">
+   <property name="text">
+    <string extracomment="save..">保存..</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="text">
+    <string>另存为..</string>
+   </property>
+   <property name="iconText">
+    <string extracomment="save as..">另存为..</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="iconText">
+    <string extracomment="about us..">关于..</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>打开..</string>
+   </property>
+   <property name="iconText">
+    <string extracomment="open ..">打开..</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionPathSetting">
+   <property name="text">
+    <string>源文件路径</string>
+   </property>
+  </action>
+  <action name="actionSavePath">
+   <property name="text">
+    <string>存储路径</string>
+   </property>
+  </action>
+  <action name="actionreset">
+   <property name="text">
+    <string>还原初始设置..</string>
+   </property>
+  </action>
+  <action name="actionpresent">
+   <property name="text">
+    <string>说明</string>
+   </property>
+   <property name="iconText">
+    <string>说明..</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionopenT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/open.png</normaloff>:/FlawPicker/Resources/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>openT</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;打开&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionsaveT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/save.png</normaloff>:/FlawPicker/Resources/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>saveT</string>
+   </property>
+   <property name="toolTip">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionsaveasT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/saveas.png</normaloff>:/FlawPicker/Resources/icons/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>saveasT</string>
+   </property>
+   <property name="toolTip">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="actiongrabT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/display.png</normaloff>:/FlawPicker/Resources/icons/display.png</iconset>
+   </property>
+   <property name="text">
+    <string>grab</string>
+   </property>
+   <property name="toolTip">
+    <string>获取图像</string>
+   </property>
+  </action>
+  <action name="actionimgprosT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/searching.png</normaloff>:/FlawPicker/Resources/icons/searching.png</iconset>
+   </property>
+   <property name="text">
+    <string>imgprosT</string>
+   </property>
+   <property name="toolTip">
+    <string>特征搜索</string>
+   </property>
+  </action>
+  <action name="actionanalyzeT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/imgpros.png</normaloff>:/FlawPicker/Resources/icons/imgpros.png</iconset>
+   </property>
+   <property name="text">
+    <string>批量分析</string>
+   </property>
+   <property name="toolTip">
+    <string>自动分析</string>
+   </property>
+  </action>
+  <action name="actioncameraT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/camera.png</normaloff>:/FlawPicker/Resources/icons/camera.png</iconset>
+   </property>
+   <property name="text">
+    <string>cameraT</string>
+   </property>
+   <property name="toolTip">
+    <string>相机读入</string>
+   </property>
+  </action>
+  <action name="actionlabelingT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/labeling.png</normaloff>:/FlawPicker/Resources/icons/labeling.png</iconset>
+   </property>
+   <property name="text">
+    <string>labelingT</string>
+   </property>
+   <property name="toolTip">
+    <string>智能过滤标记</string>
+   </property>
+  </action>
+  <action name="actionaboutT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/home.png</normaloff>:/FlawPicker/Resources/icons/home.png</iconset>
+   </property>
+   <property name="text">
+    <string>aboutT</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionsettingT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/set.png</normaloff>:/FlawPicker/Resources/icons/set.png</iconset>
+   </property>
+   <property name="text">
+    <string>settingT</string>
+   </property>
+   <property name="toolTip">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="actiontoolsT">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/tool.png</normaloff>:/FlawPicker/Resources/icons/tool.png</iconset>
+   </property>
+   <property name="text">
+    <string>toolsT</string>
+   </property>
+   <property name="toolTip">
+    <string>辅助工具</string>
+   </property>
+  </action>
+  <action name="actionreport">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/analyse.png</normaloff>:/FlawPicker/Resources/icons/analyse.png</iconset>
+   </property>
+   <property name="text">
+    <string>report</string>
+   </property>
+   <property name="toolTip">
+    <string>结果报告</string>
+   </property>
+  </action>
+  <action name="actionspeech">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/about.png</normaloff>:/FlawPicker/Resources/icons/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>speech</string>
+   </property>
+   <property name="toolTip">
+    <string>说明</string>
+   </property>
+  </action>
+  <action name="actionStandardPath">
+   <property name="text">
+    <string>标准图组路径</string>
+   </property>
+   <property name="iconText">
+    <string>标准图组路径</string>
+   </property>
+  </action>
+  <action name="actionclearImg">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/garbagebin.png</normaloff>:/FlawPicker/Resources/icons/garbagebin.png</iconset>
+   </property>
+   <property name="text">
+    <string>clearImg</string>
+   </property>
+   <property name="toolTip">
+    <string>清空画布</string>
+   </property>
+  </action>
+  <action name="actionenlarge">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/bigger.png</normaloff>:/FlawPicker/Resources/icons/bigger.png</iconset>
+   </property>
+   <property name="text">
+    <string>enlarge</string>
+   </property>
+   <property name="toolTip">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actionshrink">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/smaller.png</normaloff>:/FlawPicker/Resources/icons/smaller.png</iconset>
+   </property>
+   <property name="text">
+    <string>shrink</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actionstopAll">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/forbidden.png</normaloff>:/FlawPicker/Resources/icons/forbidden.png</iconset>
+   </property>
+   <property name="text">
+    <string>stopAll</string>
+   </property>
+   <property name="toolTip">
+    <string>禁用辅助工具栏</string>
+   </property>
+  </action>
+  <action name="actionresetT2">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/reset.png</normaloff>:/FlawPicker/Resources/icons/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>reset</string>
+   </property>
+   <property name="toolTip">
+    <string>还原初始设置</string>
+   </property>
+  </action>
+  <action name="actionrenew">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/renew.png</normaloff>:/FlawPicker/Resources/icons/renew.png</iconset>
+   </property>
+   <property name="text">
+    <string>renew</string>
+   </property>
+   <property name="toolTip">
+    <string>刷新画面</string>
+   </property>
+  </action>
+  <action name="actionautosave">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>保存处理结果</string>
+   </property>
+  </action>
+  <action name="actionsaverois">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>保存局部结果</string>
+   </property>
+  </action>
+  <action name="actionopenpath">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/openpath.png</normaloff>:/FlawPicker/Resources/icons/openpath.png</iconset>
+   </property>
+   <property name="text">
+    <string>openpath</string>
+   </property>
+   <property name="toolTip">
+    <string>设置源文件路径</string>
+   </property>
+  </action>
+  <action name="actionsavepath">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/savepath.png</normaloff>:/FlawPicker/Resources/icons/savepath.png</iconset>
+   </property>
+   <property name="text">
+    <string>savepath</string>
+   </property>
+   <property name="toolTip">
+    <string>设置存储路径</string>
+   </property>
+  </action>
+  <action name="actionstandardpath">
+   <property name="icon">
+    <iconset resource="FlawPicker.qrc">
+     <normaloff>:/FlawPicker/Resources/icons/standpath.png</normaloff>:/FlawPicker/Resources/icons/standpath.png</iconset>
+   </property>
+   <property name="text">
+    <string>standardpath</string>
+   </property>
+   <property name="toolTip">
+    <string>设置标准文件路径</string>
+   </property>
+  </action>
+  <action name="actionlabelfilter">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>设置结果智能过滤</string>
+   </property>
+   <property name="iconText">
+    <string>设置结果智能过滤</string>
+   </property>
+   <property name="toolTip">
+    <string>设置结果智能过滤</string>
+   </property>
+  </action>
+  <action name="actionshowroi">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>显示缺陷搜索结果</string>
+   </property>
+  </action>
+  <action name="actioncameraauto">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>相机自动读入处理</string>
+   </property>
+  </action>
+  <action name="actionautograb">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>相机自动读入采集</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="FlawPicker.qrc"/>
+ </resources>
+ <connections/>
+</ui>

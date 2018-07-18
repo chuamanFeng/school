@@ -1,0 +1,41 @@
+<RCC>
+  <qresource prefix="/FlawPicker">
+    <file>Resources/icons/ng.png</file>
+    <file>Resources/icons/nosig.png</file>
+    <file>Resources/icons/about.png</file>
+    <file>Resources/icons/analyse.png</file>
+    <file>Resources/icons/camera.png</file>
+    <file>Resources/icons/copy.png</file>
+    <file>Resources/icons/bigger.png</file>
+    <file>Resources/icons/cracker.png</file>
+    <file>Resources/icons/enlar.png</file>
+    <file>Resources/icons/file.png</file>
+    <file>Resources/icons/filter.png</file>
+    <file>Resources/icons/folder.png</file>
+    <file>Resources/icons/forbidden.png</file>
+    <file>Resources/icons/garbagebin.png</file>
+    <file>Resources/icons/openpath.png</file>
+    <file>Resources/icons/renew.png</file>
+    <file>Resources/icons/reset.png</file>
+    <file>Resources/icons/savepath.png</file>
+    <file>Resources/icons/smaller.png</file>
+    <file>Resources/icons/standpath.png</file>
+    <file>Resources/icons/display.png</file>
+    <file>Resources/icons/home.png</file>
+    <file>Resources/icons/bkgd.png</file>
+    <file>Resources/icons/imgpros.png</file>
+    <file>Resources/icons/labeling.png</file>
+    <file>Resources/icons/open.png</file>
+    <file>Resources/icons/or1.png</file>
+    <file>Resources/icons/save.png</file>
+    <file>Resources/icons/saveas.png</file>
+    <file>Resources/icons/searching.png</file>
+    <file>Resources/icons/set.png</file>
+    <file>Resources/icons/Pass.png</file>
+    <file>Resources/icons/tool.png</file>
+    <file>Resources/icons/pause.png</file>
+    <file>Resources/icons/start.png</file>
+    <file>Resources/icons/stop.png</file>
+    <file>Resources/icons/update.png</file>
+  </qresource>
+</RCC>
